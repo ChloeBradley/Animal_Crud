@@ -1,1 +1,22 @@
-<h1> hello! </h1>
+<%= form_for @animal do |f| %>
+<div>
+  <%= f.label :breed %>
+  <%= f.text_field :breed %>
+</div>
+<br>
+
+<div>
+  <%= f.label :weight %>
+  <%= f.text_field :weight %>
+</div>
+<br>
+
+<div>
+  <%= f.label :color %>
+  <%= f.text_area :color %>
+</div>
+
+<br>
+
+<%=  f.submit "Create Animal" %>
+<% end %>
